@@ -1,5 +1,5 @@
 <p align="center">
-<a href="http://www.bagisto.com"><img src="https://bagisto.com/wp-content/themes/bagisto/images/logo.png" alt="Total Downloads"></a>
+<a href="http://www.zippyleatherware.com"><img src="http://zippyleatherware.com/storage/channel/1/zvVE4OFnK0wPQjAXuGqCvdKW8nuqOP3wpR9FxFGj.png" alt="Total Downloads"></a>
 </p>
 
 <p align="center">
