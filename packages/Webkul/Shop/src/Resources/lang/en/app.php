@@ -527,4 +527,11 @@ return [
         'delete-success' => ':name deleted successfully.',
         'submit-success' => ':name submitted successfully.'
     ],
+
+    'about' => [
+        'page-title' => 'Zippy Leatherware | About Us',
+        'update-success' => ':name updated successfully.',
+        'delete-success' => ':name deleted successfully.',
+        'submit-success' => ':name submitted successfully.'
+    ],
 ];

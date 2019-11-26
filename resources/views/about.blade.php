@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('page_title')
+   {{ __('shop::app.about.page-title') }}
+@endsection
+
 @section('content-wrapper')
 <main role="main">
 
@@ -11,11 +15,7 @@
 
   <div class="card bg-dark text-white">
   <img src="{{ asset('storage\slider_images\Default\i5oOKUAHJnNZ6bczLSx8uybowFCi451ZUlhjV7GB.jpeg') }}" class="card-img" alt="Image Backround">
-  <!--<div class="card-img-overlay">-->
-  <!--  <h5 class="card-title">Card title</h5>-->
-  <!--  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>-->
-  <!--  <p class="card-text">Last updated 3 mins ago</p>-->
-  <!--</div>-->
+
 </div>
 
 </main>

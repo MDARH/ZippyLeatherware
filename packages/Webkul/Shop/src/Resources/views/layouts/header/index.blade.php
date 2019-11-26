@@ -49,7 +49,7 @@
 
                 @if (core()->getCurrentChannel()->currencies->count() > 1)
                     <li class="currency-switcher">
-                        <span class="dropdown-toggle">
+                        <span class="dropdown-toggles">
                             {{ core()->getCurrentCurrencyCode() }}
 
                             <i class="icon arrow-down-icon"></i>
@@ -75,7 +75,7 @@
                 {!! view_render_event('bagisto.shop.layout.header.account-item.before') !!}
 
                 <li>
-                    <span class="dropdown-toggle">
+                    <span class="dropdown-toggles">
                         <i class="icon account-icon"></i>
 
                         <span class="name">{{ __('shop::app.header.account') }}</span>
