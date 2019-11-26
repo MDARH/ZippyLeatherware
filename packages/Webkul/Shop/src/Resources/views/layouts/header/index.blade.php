@@ -19,7 +19,7 @@
                         <input type="search" name="term" class="search-field" placeholder="{{ __('shop::app.header.search-text') }}" required>
 
                         <div class="search-icon-wrapper">
-                            <button class="" class="background: none;">
+                            <button class="background: none;">
                                 <i class="icon icon-search"></i>
                             </button>
                         </div>
