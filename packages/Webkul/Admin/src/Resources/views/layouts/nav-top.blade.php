@@ -13,7 +13,7 @@
             </span>
 
             <div class="profile-info">
-                <div class="dropdown-toggle">
+                <div class="dropdown-toggles">
                     <div style="display: inline-block; vertical-align: middle;">
                         <span class="name">
                             {{ auth()->guard('admin')->user()->name }}
