@@ -21,7 +21,7 @@ git clone -b v1.0.0 https://github.com/MDARH/ZippyLeatherware.git
 - Make copy of previous storage to storage/app/public
 - Make simblink
 ~~~
-ls -s path/from path/to
+ln -s path/from path/to
 ~~~
 - Done (y)
 
