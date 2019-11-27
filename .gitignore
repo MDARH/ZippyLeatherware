@@ -1,6 +1,7 @@
 # Laravel Vendor
 vendor/
 .env
+public/storage
 
 # Node Modules
 node_modules/
