@@ -10,6 +10,15 @@
 <a href="#sponsors"><img src="https://opencollective.com/bagisto/sponsors/badge.svg" alt="Sponsors on Open Collective"></a>
 </p>
 
+# Installation Instruction
+
+- Run command to clone git clone -b v1.0.0 https://github.com/MDARH/ZippyLeatherware.git
+- Copy public folder to public_html path
+- Change index.php bootstrap & vendor path
+- Make copy of previous storage to storage/app/public
+- Make simblink ls -s path/from path/to
+- Done (y)
+
 # Topics
 1. ### [Introduction](#1-introduction-)
 2. ### [Documentation](#2-documentation-)
