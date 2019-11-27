@@ -100,9 +100,9 @@
 
     <div class="modal-overlay"></div>
     
-    <!-- Load Facebook SDK for JavaScript -->
+    {{-- <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
-{{--     <script>
+    <script>
     window.fbAsyncInit = function() {
       FB.init({
         xfbml            : true,
@@ -117,13 +117,13 @@
     js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
     fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
-    </script> --}}
+    </script>
     
     <!-- Your customer chat code -->
     <div class="fb-customerchat"
     attribution=setup_tool
     page_id="1258949097608040">
-    </div>
+    </div> --}}
 </body>
 
 </html>
