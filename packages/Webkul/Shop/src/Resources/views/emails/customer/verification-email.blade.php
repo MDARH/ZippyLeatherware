@@ -2,13 +2,22 @@
 
     <div>
         <div style="text-align: center;">
-            <a href="{{ config('app.url') }}">
-                <img src="{{ bagisto_asset('images/logo.svg') }}">
+
+            <a href="{{ route('shop.home.index') }}">
+                @if ($logo = core()->getCurrentChannel()->logo_url)
+                    <img class="logo" src="{{ $logo }}" />
+                @else
+                    <img class="logo" src="{{ bagisto_asset('images/logo.svg') }}" />
+                @endif
             </a>
+                    
+{{--             <a href="{{ config('app.url') }}">
+                <img src="{{ asset('images/logo.svg') }}">
+            </a> --}}
         </div>
 
         <div  style="font-size:16px; color:#242424; font-weight:600; margin-top: 60px; margin-bottom: 15px">
-            Bagisto - Email Verification
+            Zippy Leatherware - Email Verification
         </div>
 
         <div>
