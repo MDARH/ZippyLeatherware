@@ -12,11 +12,17 @@
 
 # Installation Instruction
 
-- Run command to clone git clone -b v1.0.0 https://github.com/MDARH/ZippyLeatherware.git
+- Run command to clone
+~~~
+git clone -b v1.0.0 https://github.com/MDARH/ZippyLeatherware.git
+~~~
 - Copy public folder to public_html path
 - Change index.php bootstrap & vendor path
 - Make copy of previous storage to storage/app/public
-- Make simblink ls -s path/from path/to
+- Make simblink
+~~~
+ls -s path/from path/to
+~~~
 - Done (y)
 
 # Topics
