@@ -1,7 +1,11 @@
 @component('shop::emails.layouts.master')
     <div style="text-align: center;">
         <a href="{{ config('app.url') }}">
-            <img src="{{ bagisto_asset('images/logo.svg') }}">
+            @if ($logo = core()->getCurrentChannel()->logo_url)
+                <img class="logo" src="{{ $logo }}" />
+            @else
+                <img class="logo" src="{{ bagisto_asset('images/logo.svg') }}" />
+            @endif
         </a>
     </div>
 

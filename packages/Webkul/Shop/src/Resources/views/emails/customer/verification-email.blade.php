@@ -11,9 +11,6 @@
                 @endif
             </a>
                     
-{{--             <a href="{{ config('app.url') }}">
-                <img src="{{ asset('images/logo.svg') }}">
-            </a> --}}
         </div>
 
         <div  style="font-size:16px; color:#242424; font-weight:600; margin-top: 60px; margin-bottom: 15px">
