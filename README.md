@@ -23,6 +23,10 @@ git clone -b v1.0.0 https://github.com/MDARH/ZippyLeatherware.git
 ~~~
 ln -s path/from path/to
 ~~~
+- Command for Publish vendor
+~~~
+php artisan vendor:publish
+~~~
 - Done (y)
 
 # Topics
