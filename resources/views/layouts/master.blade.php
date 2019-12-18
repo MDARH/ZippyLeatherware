@@ -124,6 +124,9 @@
     attribution=setup_tool
     page_id="1258949097608040">
     </div> --}}
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v5.0"></script>
 </body>
 
 </html>
