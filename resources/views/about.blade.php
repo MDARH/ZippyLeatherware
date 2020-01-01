@@ -16,10 +16,6 @@
   <div class="card bg-dark text-white">
   <img src="{{ asset('storage\slider_images\Default\i5oOKUAHJnNZ6bczLSx8uybowFCi451ZUlhjV7GB.jpeg') }}" class="card-img" alt="Image Backround">
 
-  <div class="fb-share-button" data-href="http://zippyleatherware.com/products/ladies_bag_13" data-layout="button_count" data-size="large">
-  	<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a>
-  </div>
-
 </div>
 
 </main>

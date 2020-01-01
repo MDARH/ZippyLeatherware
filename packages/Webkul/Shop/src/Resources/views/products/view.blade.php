@@ -93,6 +93,10 @@
                     </div>
                 </div>
             </product-view>
+
+            <div class="fb-share-button" data-href="http://zippyleatherware.com/products/{{ $product->url_key }}" data-layout="button_count" data-size="large">
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a>
+            </div>
         </div>
 
         @include ('shop::products.view.related-products')
