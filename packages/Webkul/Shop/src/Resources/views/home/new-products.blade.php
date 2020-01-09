@@ -4,7 +4,7 @@
         <div class="featured-heading">
             {{ __('shop::app.home.new-products') }}<br/>
 
-            <span class="featured-seperator" style="color:lightgrey;">_____</span>
+            <span class="featured-seperator" style="color:lightgrey;">________</span>
         </div>
 
         <div class="product-grid-4">

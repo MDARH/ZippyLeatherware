@@ -4,11 +4,11 @@ return [
     [
         'key' => 'simple',
         'name' => 'Simple',
-        'sort' => 1
+        'sort' => 2
 
     ], [
         'key' => 'configurable',
         'name' => 'Configurable',
-        'sort' => 2
+        'sort' => 1
     ]
 ];
