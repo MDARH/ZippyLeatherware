@@ -14,6 +14,8 @@
     {!! view_render_event('bagisto.shop.products.view.before', ['product' => $product]) !!}
 
     <section class="product-detail">
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v5.0"></script>
 
         <div class="layouter">
             <product-view>
@@ -95,7 +97,7 @@
             </product-view>
 
             <div class="fb-share-button" data-href="http://zippyleatherware.com/products/{{ $product->url_key }}" data-layout="button_count" data-size="large">
-                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a>
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fzippyleatherware.com%2Fproducts%2F1063s&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a>
             </div>
         </div>
 
