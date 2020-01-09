@@ -13,14 +13,16 @@
       <div class="col-lg-4 ml-auto align-self-center">
         <h3 class="text-black text-uppercase mb-4"><strong>Bangladesh Office</strong></h3>
         <p class="mb-1">House-22, Road-11, Block-L, South Banasree, Dhaka-1219, Bangladesh.</p>
-        <p class="mb-5">Mobile: +8801790242052-5</p>
+        <p class="mb-5">Mobile: +8801790242052-5 </br>
+            Email: info&#64;zippyleatherware.com
+        </p>
       </div>
 
       <div class="col-lg-4 ml-auto align-self-center">
         <h3 class="text-black text-uppercase mb-4"><strong>Malaysia Office</strong></h3>
         <p class="mb-1">5-2-1, Suria Avenue Jalan Dawai 16/2, Section 16 40200 Shah Alam Selangor, Malaysia</p>
         <p class="mb-5">Tel: +60355120071, Mobile: +60166089243 <br>
-        Email: arifhossain.ap@gmail.com</p>
+        Email: arifhossain.ap&#64;gmail.com</p>
       </div>
 
       <div class="col-lg-4 ml-auto align-self-center">
