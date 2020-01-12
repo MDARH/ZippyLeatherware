@@ -7,6 +7,12 @@
 @section('seo')
     <meta name="description" content="{{ trim($product->meta_description) != "" ? $product->meta_description : str_limit(strip_tags($product->description), 120, '') }}"/>
     <meta name="keywords" content="{{ $product->meta_keywords }}"/>
+
+    <meta property="og:url" content="http://zippyleatherware.com/products/{{ $product->url_key }}" />
+    <meta property="og:type"    content="Zippy Leatherware Type" />
+    <meta property="og:title"   content="Zippy Leatherware Title" />
+    <meta property="og:description" content="Zippy Leatherware description" />
+    <meta property="og:image"   content="http://zippyleatherware.com/products/1026c" />
 @stop
 
 @section('content-wrapper')
@@ -14,8 +20,6 @@
     {!! view_render_event('bagisto.shop.products.view.before', ['product' => $product]) !!}
 
     <section class="product-detail">
-        <div id="fb-root"></div>
-        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v5.0"></script>
 
         <div class="layouter">
             <product-view>
