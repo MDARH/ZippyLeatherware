@@ -8,6 +8,12 @@
     <meta name="description" content="{{ trim($product->meta_description) != "" ? $product->meta_description : str_limit(strip_tags($product->description), 120, '') }}"/>
     <meta name="keywords" content="{{ $product->meta_keywords }}"/>
 
+    <meta property="og:url" content="http://dev.zippyleatherware.com/products/1026c" />
+    <meta property="og:title" content="Ovijog sutro" />
+    <meta property="og:description" content="Describe product" />
+    <meta property="og:image" content="https://d30fl32nd2baj9.cloudfront.net/media/2019/07/01/mizan-basir.jpg/ALTERNATES/w640/mizan-basir.jpg" />
+    <meta property="og:type" content="article" />
+
 
 @stop
 
