@@ -14,6 +14,13 @@
     <meta property="og:image" content="https://d30fl32nd2baj9.cloudfront.net/media/2019/07/01/mizan-basir.jpg/ALTERNATES/w640/mizan-basir.jpg" />
     <meta property="og:type" content="article" />
 
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1258949097608040";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 
 @stop
 
@@ -102,13 +109,11 @@
             </product-view>
 
             <!-- FB share button code -->
-{{--             <div class="fb-share-button"
+            <div class="fb-share-button"
                 data-size="large"
                 data-href="http://zippyleatherware.com/products/1026c"
-                data-image="http://dev.zippyleatherware.com/cache/small/product/92/UHavaUUbyg1SXiTiYlKmwtnTgZe8ODSMsD5E6R5d.jpeg"
-                data-icon_link="http://dev.zippyleatherware.com/cache/small/product/92/UHavaUUbyg1SXiTiYlKmwtnTgZe8ODSMsD5E6R5d.jpeg"
                 data-layout="button_count">
-            </div> --}}
+            </div>
             
             <iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fdev.zippyleatherware.com%2Fproducts%2F1026c&layout=button_count&size=large&width=89&height=28&appId" width="89" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
         </div>
