@@ -8,14 +8,24 @@
     <meta name="description" content="{{ trim($product->meta_description) != "" ? $product->meta_description : str_limit(strip_tags($product->description), 120, '') }}"/>
     <meta name="keywords" content="{{ $product->meta_keywords }}"/>
 
-    <meta property="og:url" content="http://zippyleatherware.com/products/{{ $product->url_key }}" />
+    <meta property="og:url" content="http://dev.zippyleatherware.com/products/1026c" />
     <meta property="og:type"    content="Zippy Leatherware Type" />
     <meta property="og:title"   content="Zippy Leatherware Title" />
     <meta property="og:description" content="Zippy Leatherware description" />
-    <meta property="og:image"   content="http://zippyleatherware.com/products/1026c" />
+    <meta property="og:image"   content="http://dev.zippyleatherware.com/cache/small/product/92/UHavaUUbyg1SXiTiYlKmwtnTgZe8ODSMsD5E6R5d.jpeg" />
 @stop
 
 @section('content-wrapper')
+
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 
     {!! view_render_event('bagisto.shop.products.view.before', ['product' => $product]) !!}
 
@@ -100,9 +110,15 @@
                 </div>
             </product-view>
 
+            <!-- FB share button code -->
+            <div class="fb-share-button" 
+                data-href="http://zippyleatherware.com/products/1026c" 
+                data-layout="button_count">
+            </div>
+{{-- 
             <div class="fb-share-button" data-href="http://zippyleatherware.com/products/{{ $product->url_key }}" data-layout="button_count" data-size="large">
                 <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fzippyleatherware.com%2Fproducts%2F1063s&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a>
-            </div>
+            </div> --}}
         </div>
 
         @include ('shop::products.view.related-products')
