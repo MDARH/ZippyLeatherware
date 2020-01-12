@@ -111,18 +111,6 @@
 
         @include ('shop::products.view.up-sells')
 
-        <script>
-          window.fbAsyncInit = function() {
-            FB.init({
-              appId            : '1258949097608040',
-              autoLogAppEvents : true,
-              xfbml            : true,
-              version          : 'v5.0'
-            });
-          };
-        </script>
-        <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
-
     </section>
 
     {!! view_render_event('bagisto.shop.products.view.after', ['product' => $product]) !!}
