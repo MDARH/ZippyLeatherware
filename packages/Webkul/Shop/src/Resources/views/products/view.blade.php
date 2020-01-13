@@ -1,3 +1,6 @@
+@inject ('productImageHelper', 'Webkul\Product\Helpers\ProductImage')
+<?php $images = $productImageHelper->getGalleryImages($product); ?>
+
 @extends('shop::layouts.master')
 
 @section('page_title')
@@ -5,8 +8,27 @@
 @stop
 
 @section('seo')
+    @php
+    $image = $images[0];
+    $large = $image['large_image_url'];
+    @endphp
+
     <meta name="description" content="{{ trim($product->meta_description) != "" ? $product->meta_description : str_limit(strip_tags($product->description), 120, '') }}"/>
     <meta name="keywords" content="{{ $product->meta_keywords }}"/>
+
+    <meta property="og:url" content="{{ url()->current() }}" />
+    <meta property="og:title" content="Zippy Leatherware" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="{{ $large }}" />
+    <meta property="og:type" content="article" />
+
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1258949097608040";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 @stop
 
 @section('content-wrapper')
@@ -95,10 +117,9 @@
                     </div>
                 </div>
             </product-view>
+            <!-- FB share button code -->
+            <iframe src="https://www.facebook.com/plugins/share_button.php?href={{ url()->current() }}&layout=button_count&size=large&appId=2779647015462882&width=89&height=28" width="89" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 
-            <div class="fb-share-button" data-href="http://zippyleatherware.com/products/{{ $product->url_key }}" data-layout="button_count" data-size="large">
-                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fzippyleatherware.com%2Fproducts%2F1063s&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a>
-            </div>
         </div>
 
         @include ('shop::products.view.related-products')
