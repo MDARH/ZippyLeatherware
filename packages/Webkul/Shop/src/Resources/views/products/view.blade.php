@@ -17,8 +17,8 @@
     <meta name="keywords" content="{{ $product->meta_keywords }}"/>
 
     <meta property="og:url" content="{{ url()->current() }}" />
-    <meta property="og:title" content="Zippy Leatherware" />
-    <meta property="og:description" content="" />
+    <meta property="og:title" content="{{ $product->name}} | {{ core()->currency($product->price) }}" />
+    <meta property="og:description" content="{{ trim($product->meta_description) != "" ? $product->meta_description : str_limit(strip_tags($product->description), 120, '') }}" />
     <meta property="og:image" content="{{ $large }}" />
     <meta property="og:type" content="article" />
 
